@@ -1,0 +1,129 @@
+.intro {
+    height: 70vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/src/assets/unnamed.jpg);
+}
+
+.introGretting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 5vw;
+}
+
+.autorName {
+    position: absolute;
+    z-index: 10;
+}
+
+.nameText {
+    font-size: 2.5vw;
+    text-align: center;
+    color: rgb(150, 0, 150);
+}
+
+.introAnimation {
+    position: relative; 
+    width: 50vw; 
+    height: 50vw; 
+    border-radius: 50%; 
+}
+
+.stonePlace {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    width: 5vw;
+    transform-origin: center; 
+}
+
+.stone {
+    width: 100%;
+}
+
+.introAnimation .stonePlace:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-20vw);
+}
+
+.introAnimation .stonePlace:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(60deg) translateY(-20vw);
+}
+
+.introAnimation .stonePlace:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(120deg) translateY(-20vw);
+}
+
+.introAnimation .stonePlace:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(180deg) translateY(-20vw);
+}
+
+.introAnimation .stonePlace:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(240deg) translateY(-20vw);
+}
+
+.introAnimation .stonePlace:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(300deg) translateY(-20vw);
+}
+
+@media all and (max-width: 768px) {
+
+    .intro {
+        height: 200vw;
+    }
+
+    .introGretting {
+        position: relative;
+        top: 50vw;
+    }
+    
+    .nameText {
+        font-size: 6vw;
+        text-align: center;
+        color: rgb(150, 0, 150);
+    }
+    
+    .introAnimation {
+        width: 60vw; 
+        height: 60vw;
+    }
+    
+    .stonePlace {
+        width: 6vw;
+    }
+    
+    .stone {
+        width: 100%;
+    }
+    
+    .introAnimation .stonePlace:nth-child(1) {
+        transform: translate(-50%, -50%) rotate(0deg) translateY(-30vw);
+    }
+    
+    .introAnimation .stonePlace:nth-child(2) {
+        transform: translate(-50%, -50%) rotate(60deg) translateY(-30vw);
+    }
+    
+    .introAnimation .stonePlace:nth-child(3) {
+        transform: translate(-50%, -50%) rotate(120deg) translateY(-30vw);
+    }
+    
+    .introAnimation .stonePlace:nth-child(4) {
+        transform: translate(-50%, -50%) rotate(180deg) translateY(-30vw);
+    }
+    
+    .introAnimation .stonePlace:nth-child(5) {
+        transform: translate(-50%, -50%) rotate(240deg) translateY(-30vw);
+    }
+    
+    .introAnimation .stonePlace:nth-child(6) {
+        transform: translate(-50%, -50%) rotate(300deg) translateY(-30vw);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .intro {
+        height: 100vw;
+    }
+} 

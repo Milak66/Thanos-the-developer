@@ -1,0 +1,134 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+  
+.modalValue {
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+    height: 25vw;
+    position: relative;
+    background-color: rgb(234, 234, 234);
+    border-radius: 2vw;
+}
+
+.modalValue:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 2vw;
+  padding: 0.2vw; 
+  background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+  
+.form {
+    display: flex;
+    height: 23vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.textToUser {
+    text-align: center;
+}
+  
+.normalTextToUser {
+    font-size: 1.5vw;
+}
+  
+.smallTextToUser {
+  font-size: 1.5vw;
+}
+
+.textToUserToHelp {
+  font-size: 1.5vw;
+  text-align: center;
+}
+  
+.textForEmail {
+      width: 30vw;
+      height: 7vw;
+      resize: none;
+      font-size: 1.5vw;
+}
+  
+.btnSubmit {
+      padding: 1vw;
+      border-radius: 2vw;
+      font-size: 1.5vw;
+      border: none;
+      background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+      cursor: pointer;
+}
+  
+@media all and (max-width: 768px) {
+  
+    .modalValue {
+      width: 90vw;
+      margin-top: 2vw;
+      height: 70vw;
+      border-radius: 4vw;
+    }
+
+    .modalValue:before {
+      border-radius: 4vw;
+      padding: 0.4vw; 
+    }
+  
+    .form {
+      display: flex;
+      height: 65vw;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .textToUser {
+      text-align: center;
+    }
+  
+    .normalTextToUser {
+      font-size: 3.5vw;
+    }
+  
+    .smallTextToUser {
+      font-size: 3.5vw;
+    }
+
+    .textToUserToHelp {
+      font-size: 3.5vw;
+    }
+  
+    .textForEmail {
+      width: 70vw;
+      height: 20vw;
+      resize: none;
+      font-size: 3.5vw;
+    }
+  
+    .btnSubmit {
+      font-size: 3.5vw;
+      padding: 2vw;
+      border-radius: 2vw;
+    }
+}

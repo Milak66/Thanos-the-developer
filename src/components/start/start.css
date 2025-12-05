@@ -1,0 +1,143 @@
+.start {
+    display: grid;
+    height: 6vw;
+    grid-template-columns: [start] 80vw [middle] 20vw [end];
+    position: fixed; 
+    z-index: 100;
+    border-radius: 2vw;
+}
+
+.startOfSite {
+    position: relative;
+    display: flex;
+    align-items: center;
+    grid-column: start / middle;
+    background-color: rgb(234, 234, 234);
+    height: 6vw;
+    border-radius: 2vw;
+}
+
+.startOfSite:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 2vw;
+    padding: 0.2vw;
+    background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    box-sizing: border-box;
+}
+
+.name {
+    color: rgb(150, 0, 150);
+    font-size: 2vw;
+    margin-left: 0.5vw;
+}
+
+.menu {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    grid-column: middle / end;
+    background-color: rgb(234, 234, 234);
+    border-radius: 2vw;
+}
+
+.menu:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 2vw;
+    padding: 0.2vw; 
+    background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.titleOfSettings {
+    font-size: 2vw;
+    height: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(150, 0, 150);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vw;
+}
+
+.action {
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    color: rgb(150, 0, 150);
+    text-align: center;
+}
+
+@media all and (max-width: 768px) {
+
+    .start {
+        height: 15vw;
+        grid-template-columns: [start] 70vw [middle] 30vw [end];
+        border-radius: 4vw;
+        background-color: transparent; 
+    }
+
+    .startOfSite {
+        height: 15vw;
+        border-radius: 4vw;
+    }
+
+    .startOfSite:before {
+        padding: 0.4vw; 
+        border-radius: 4vw;
+    }
+
+    .name {
+        font-size: 6vw;
+        margin-left: 1vw;
+    }
+
+    .menu {
+        border-radius: 4vw;
+    }
+
+    .menu:before {
+        padding: 0.4vw; 
+        border-radius: 4vw;
+    }
+
+    .titleOfSettings {
+        font-size: 5vw;
+        height: 15vw;
+    }
+    
+    .options {
+        height: 25vw;
+        border-radius: 4vw;
+    }
+
+    .action {
+        font-size: 4.5vw;
+    }
+}

@@ -1,0 +1,39 @@
+.loading_place {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(/src/assets/697b00d2b6bcf68cbb94f9da415dec98.jpg);
+}
+
+.dark_fun {
+    width: 10vw;
+    position: relative;
+    border-radius: 3vw;
+}
+
+.loadingText {
+    font-size: 3vw;
+    color: rgb(150, 0, 150);
+}
+
+@media all and (max-width: 768px) {
+
+    .loading_place {
+        height: 100vh
+    }
+    
+    .dark_fun {
+        width: 25vw;
+        border-radius: 6vw;
+    }
+
+    .loadingText {
+        font-size: 7vw;
+        color: rgb(150, 0, 150);
+    }
+}
